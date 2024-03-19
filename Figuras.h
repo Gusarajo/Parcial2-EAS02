@@ -5,7 +5,23 @@ using namespace std;
 
 class Cuadrado : public Figura
 {
-    Figura(int b, int h);
+    Cuadrado(int b, int h) : Figura(b, h)
+    {
+        this->setArea(b * h);
+    }
 };
-
+class Triangulo : public Figura
+{
+    Triangulo(int b, int h) : Figura(b, h)
+    {
+        this->setArea((b * h) / 2);
+    }
+};
+class Rectangulo : public Figura
+{
+    Rectangulo(int b, int h) : Figura(b, h)
+    {
+        this->setArea(b * h);
+    }
+};
 #endif

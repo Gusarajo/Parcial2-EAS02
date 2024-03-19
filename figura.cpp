@@ -15,7 +15,7 @@ Figura::Figura(int b, int h)
 
 void Figura::setArea(float a)
 {
-    this->a = b * h;
+    this->a = a;
 }
 
 float Figura::getArea()
