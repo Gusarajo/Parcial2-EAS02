@@ -5,9 +5,9 @@ using namespace std;
 
 class Cuadrado : public Figura
 {
-    Cuadrado(int b, int h) : Figura(b, h)
+    Cuadrado(int l) : Figura(l, l)
     {
-        this->setArea(b * h);
+        this->setArea(l * l);
     }
 };
 class Triangulo : public Figura
